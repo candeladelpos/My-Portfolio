@@ -1,100 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header class="bg-dark text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h4 mb-0">Candela's Portfolio</h1>
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Responsive Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Candela<br />an IT</span> Project Manager
+          </h1>
+          <p class="description">
+            Welcome to my portfolio! I’m Candela, 
+            an experienced and dynamic project manager with 
+            a passion for leading teams and delivering high-quality 
+            projects. With a track record of successfully managing 
+            diverse initiatives, I specialize in ensuring seamless collaboration, 
+            meeting deadlines, and achieving business goals. 
+            From agile workflows to strategic planning, 
+            I bring creativity and efficiency to every project I lead.
+          </p>
+          <div class="action__btns">
+            <button class="hire__me" onclick="window.location.href='contact.html';">Hire Me</button>
+            <button class="portfolio" onclick="window.location.href='portfolio.html';">Portfolio</button>
+          </div>
         </div>
-    </header>
-
-    <main>
-        <section class="hero bg-primary text-white text-center py-5">
-            <div class="container">
-                <h1>Hi, I'm Candela</h1>
-                <p class="lead">Project Manager | Delivery Manager | Scrum Master</p>
-                <a href="about.html" class="btn btn-light btn-lg mt-3">Learn More About Me</a>
-            </div>
-        </section>
-
-
-        <section class="portfolio py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">My Recent Work</h2>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./images/powerbi.png" class="card-img-top" alt="Microsoft Copilot">
-                            <div class="card-body">
-                                <h5 class="card-title">Project with Power BI</h5>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-                                    exercitationem at et excepturi quam consequuntur, dolor perspiciatis neque unde
-                                    voluptatum ad, nemo deserunt quo repellendus officia nesciunt tempore possimus.
-                                    Sit.s.</p>
-                                <a href="projects.html" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./images/bc.png" class="card-img-top" alt="Business Central">
-                            <div class="card-body">
-                                <h5 class="card-title">Project with Business Central</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-                                    veritatis quos aspernatur culpa? Consequatur corrupti ab soluta eum, animi earum
-                                    aliquam commodi. Quisquam animi repudiandae repellendus? Voluptates sit qui
-                                    voluptatibus?.</p>
-                                <a href="projects.html" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="./images/copilot.webp" class="card-img-top" alt="Artificial Intelligence">
-                            <div class="card-body">
-                                <h5 class="card-title">Project with Copilot AI</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                                    blanditiis perferendis sunt nisi fugit. Officia exercitationem culpa, animi
-                                    distinctio nesciunt eligendi repudiandae ratione beatae, sint tenetur, nisi quas
-                                    similique voluptas..</p>
-                                <a href="projects.html" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2024 Candela's Portfolio</p>
+        <div class="image">
+          <img src="assets/profile.jpg" alt="profile" />
         </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+      </div>
+    </section>
+  </body>
+  <footer>
+    <div class="footer-content">
+        <p>© 2024 Project Manager Portfolio</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://x.com" target="_blank" class="social-icon">
+                <img src="assets/icons/x.svg" alt="X">
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+                <img src="assets/icons/github.svg" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</footer>
 </html>
